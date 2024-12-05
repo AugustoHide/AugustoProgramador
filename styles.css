@@ -1,0 +1,241 @@
+/* Aplica o box-sizing a todos os elementos para incluir padding e border no cálculo do tamanho */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 248, 216);
+  margin: 0;
+}
+/* Estilo do cabeçalho */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  color: rgb(245, 244, 244);
+  background-color: rgb(22, 22, 22);
+  height: 70px;
+  position: sticky;
+  top: 0;
+}
+
+/* Estilo do logo */
+.logo-container img {
+  height: 60px;
+  border-radius: 100%;
+}
+/* Estilo da lista de navegação */
+.navlinks-container ul {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Bookman, "URW Bookman L", serif;
+  font-size: large;
+}
+/* Estilo dos itens da lista */
+.navlinks-container li {
+  margin: auto 1em;
+  list-style: none;
+}
+/* Estilo dos links da navegação */
+.navlinks-container a {
+  text-decoration: none;
+  color: rgb(245, 244, 244);
+}
+/* Estilo para todas as Seções principais´ */
+.main-section {
+  height: 100vh;
+  padding-top: 70px;
+  display: flex;
+  background-color: rgb(250, 250, 250);
+}
+/* Contêiner de imagem. Definindo largura como metade da página */
+.image-container {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+/* Definição do tamnaho de imagem com uma certa largura nas laterais e arredondamento nas pontas*/
+.image-container img {
+  width: 90%;
+  border-radius: 10px;
+}
+/* Definição das propriedades do texto. Sendo a largura um pouco menor para ficar mais enxuta e centralizando o texto*/
+.text-container {
+  margin: auto 1rem;
+  width: 40%;
+  display: flex-column;
+  justify-content: center;
+  align-items: center;
+}
+/* Título principal dentro de text.content */
+.text-container h1 {
+  font-family: Bookman, "URW Bookman L", serif;
+  font-size: 4rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+/* Definição de tipo de fonte diferente para paragrafo*/
+.text-container p {
+  font-family: "Courier New", Courier, monospace;
+}
+/* -- Definições para seção que sou -- */
+/* Definição para nova cor de fundo */
+.quem-eu-sou {
+  background-color: rgb(1, 22, 56);
+}
+/* Definição para cor do texto*/
+.text-quem-sou {
+  color: rgb(245, 244, 244);
+  text-align: end;
+}
+/* Definição para tamanho da image, afim de que ela não fique rão grande. E definição da imagem de fundo*/
+.image-quem-sou-container {
+  height: 80%;
+}
+#img-quem-sou {
+  background-image: url("quemsou.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 70%;
+  border-radius: 1000px;
+}
+/* Definições para o título da seção Portfólio */
+#text-title-portfolio {
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+}
+#educacao-section {
+  display: flex;
+  flex-direction: column;
+}
+#educacao-tile-container {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+#educacao-tile-container h2 {
+  margin: 0;
+}
+/* Definições para a seção onde estão os conteúdos do portfólio */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: Bookman, "URW Bookman L", serif;
+  height: 50vh;
+  justify-content: space-around;
+}
+.content-container ul {
+  text-align: left;
+}
+.bold {
+  font-weight: bolder;
+}
+.content-container a {
+  text-decoration: none;
+  color: black;
+}
+/* Definições para a seção Portfólio*/
+#portfolio-section {
+  background-color: rgb(1, 22, 56);
+  color: rgb(245, 244, 244);
+  flex-direction: column;
+}
+#text-title-portfolio {
+  margin: 1rem auto;
+  margin-bottom: 4rem;
+}
+/* Definições de estilo para item do portfólio, como sua largura tamanho da imagem do item do portfólio, etc  */
+.portfolio-item {
+  height: 100%;
+  width: 30vw;
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 10px rgba(187, 187, 255, 0.2);
+}
+.portfolio-image-item {
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+#portfolio-image-item-1 {
+  background-image: url("print-portfolio1.png");
+}
+#portfolio-image-item-2 {
+  background-image: url("print-protfolio2.png");
+}
+#portfolio-image-item-3 {
+  background-image: url("print-portfolio3.png");
+}
+/* -- Definições da Seção Contatos --*/
+#contatos-section {
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* Definições para os itens das redes sociais*/
+.list-redes-sociais {
+  display: flex;
+  flex-direction: row;
+}
+#contatos-image-container {
+  margin: auto 0;
+}
+.item-contatos {
+  margin-left: 2rem;
+}
+.item-contatos-image {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  float: left;
+}
+/* Definições das imagens dos logos das redes sociais*/
+#linkedin-image {
+  background-image: url("liked-in.png");
+}
+#facebook-image {
+  background-image: url("facebook-image.png");
+}
+#insta-image {
+  background-image: url("insta-logo.png");
+}
+/* Definições da cor dos links*/
+#contatos-section a {
+  text-decoration: none;
+  color: blue;
+}
+.item-contatos-texto {
+  font-size: 1.25em;
+  margin-left: 2rem;
+}
+#cursos-livres a {
+  color: blue;
+}
+/* -- Definições de estlo do formulário -- */
+.formulario {
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.formulario label {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  width: 25%;
+}
+.formulario input {
+  font-family: "Courier New", Courier, monospace;
+  width: 70%;
+}
+.formulario button {
+  padding: 0.5em 2em;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: rgb(1, 22, 56);
+  color: rgb(245, 244, 244);
+}

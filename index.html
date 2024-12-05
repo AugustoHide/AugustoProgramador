@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Declaração do tipo de documento HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Augusto Programador</title>
+    <!-- Link para o arquivo de estilos CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegação do site -->
+    <header class="header-container">
+      <!-- Espaço do logotipo -->
+      <div class="logo-container">
+        <a href="#inicio"><img src="logo.png" alt="Logo" /></a>
+      </div>
+      <!-- Container cos links de navegação -->
+      <div class="navlinks-container">
+        <ul>
+          <!-- Links de navegação -->
+          <a href="#quem-sou"><li>Quem eu sou</li></a>
+          <a href="#educacao-section"><li>Minha educação</li></a>
+          <a href="#portfolio-section"><li>Meu Portfólio</li></a>
+          <a href="#contatos-section"><li>Meus Contatos</li></a>
+        </ul>
+      </div>
+    </header>
+    <!-- Seção inicial -->
+    <section id="inicio" class="main-section">
+      <!-- Container com a imagem ilustrativa -->
+      <div class="image-container">
+        <img src="home-img.jpg" alt="programando" />
+      </div>
+      <!-- Seção com texto de apresentação -->
+      <section class="text-container">
+        <h1>Augusto Programador</h1>
+        <p>Pensando fora da caixa, programando dentro dela</p>
+      </section>
+      <!-- Seção "Quem Eu Sou" -->
+    </section>
+    <section class="main-section quem-eu-sou" id="quem-sou">
+      <!-- Seção com texto de quem sou eu -->
+      <section class="text-container text-quem-sou">
+        <h1>Quem eu sou</h1>
+        <p>
+          Olá, meu nome é Augusto. Eu sou um programador que está a procura de
+          aprimorar meus conhecimentos.
+        </p>
+        <p>
+          Atualmente tenho uma boa base de front-end, dominando bem tecnologias
+          como HTML, CSS, javascript e um pouco de ReactJS.
+        </p>
+        <p>
+          Não domino muito o back-end, mas sei programar em C, Java e tambeḿ sei
+          mecher um pouco com MySQL.
+        </p>
+      </section>
+      <!-- Seção com minha foto-->
+      <div class="image-container image-quem-sou-container">
+        <div id="img-quem-sou"></div>
+      </div>
+    </section>
+    <!-- Seção "Minha Educação" -->
+    <section class="main-section" id="educacao-section">
+      <!-- Seção com texto de título da seção-->
+      <section class="text-container" id="educacao-tile-container">
+        <h1>Minha educação</h1>
+      </section>
+      <!-- Seção com as educações formais e cursos livres -->
+      <section class="content-container">
+        <section class="text-container" id="educacao-formal">
+          <h2>Educação Formal</h2>
+          <ul>
+            <li>
+              <span class="bold">2024-07:</span> Engenharia de Software -
+              Uninter
+            </li>
+            <li>
+              <span class="bold">2022-02:</span> Ciência da Computação - UFMS
+            </li>
+            <li>
+              <span class="bold">2015-11:</span> Conclusão de Ensino Médio pelo
+              ENEM
+            </li>
+          </ul>
+        </section>
+        <section class="text-container" id="cursos-livres">
+          <h2>Cursos Livres</h2>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-3debc7ad-288a-4abb-98ba-42731eca8d7a/"
+                >Complete Web & Mobile Designer: UI/UX, Figma, +more</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-91b856a2-3b2f-47e2-97a7-106f5d4d1deb/"
+              >
+                UX & Design Thinking: Experiência do Usuário nos negócios</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-af96b829-7233-4fc6-8521-1717c99341dc/"
+                >The Complete JavaScript Course 2024: From Zero to Expert!</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.udemy.com/certificate/UC-ab11cc3f-4be8-4436-994e-3bab948aa10c/"
+                >React - The Complete Guide 2024 (incl. Next.js, Redux)</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <!-- Seção "Meu Portfólio" -->
+    <section class="main-section" id="portfolio-section">
+      <!-- Seção com o título da seção-->
+      <section class="text-container" id="text-title-portfolio">
+        <h1>Meu Portfólio</h1>
+      </section>
+      <!-- Seção com os items do potfólio -->
+      <section class="content-container">
+        <!-- Primeiro item do portfólio-->
+        <a href="https://augustohide.github.io/fdsUninter/" target="_blank"
+          ><article class="portfolio-item">
+            <div
+              class="image-container portfolio-image-item"
+              id="portfolio-image-item-1"
+            ></div>
+            <section>
+              <h3>Site exemplo</h3>
+              <p class="descricao">
+                Site feito a partir da disciplina de Fundamentos de
+                Desenvolvimento de Software
+              </p>
+            </section>
+          </article></a
+        >
+        <!-- Segundo item do portfólio-->
+        <a
+          href="https://github.com/AugustoHide/MyCodeRectTheCompleteGuide2024Course"
+          target="_blank"
+          ><article class="portfolio-item">
+            <div
+              class="image-container portfolio-image-item"
+              id="portfolio-image-item-2"
+            ></div>
+            <section>
+              <h3>Exercícios do curso ReactJS</h3>
+              <p class="descricao">
+                Repositório contendo todos os código de todos os exercício
+                mostrados durante o curso.
+              </p>
+            </section>
+          </article></a
+        >
+        <!-- Terceiro item do portfólio-->
+        <a
+          href="https://github.com/AugustoHide/MyCodeTheCompleteJavascriptCourse"
+          target="_blank"
+          ><article class="portfolio-item">
+            <div
+              class="image-container portfolio-image-item"
+              id="portfolio-image-item-3"
+            ></div>
+            <section>
+              <h3>Exercícios do curso de JavaScript</h3>
+              <p class="descricao">
+                Repositório cotendo todos os códigos de todos os exercícios
+                feitos no decorrer de todo o curso.
+              </p>
+            </section>
+          </article></a
+        >
+      </section>
+    </section>
+    <!-- Seção "Meus Contatos" -->
+    <section class="main-section" id="contatos-section">
+      <!-- Seção contendo os links das redes sociais e formulário de mensagem-->
+      <section class="text-container" id="contatos-content-section">
+        <h1>Minhas redes sociais</h1>
+        <p>Quer acompanhar mais do meu trabalho e projetos?</p>
+        <p>Me siga nas redes sociais</p>
+        <div class="list-redes-sociais">
+          <a
+            href="https://www.linkedin.com/in/augusto-sakihama/"
+            target="_blank"
+            ><section class="item-contatos">
+              <div class="item-contatos-image" id="linkedin-image"></div>
+              <p class="item-contatos-texto">LinkedIn</p>
+            </section>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100004323585891&mibextid=ZbWKwL"
+            target="_blank"
+            ><section class="item-contatos">
+              <div class="item-contatos-image" id="facebook-image"></div>
+              <p class="item-contatos-texto">Facebook</p>
+            </section>
+          </a>
+          <a
+            href="https://www.instagram.com/augustoh.sakihama/profilecard/?igsh=MTZ4Z2x3eTRicWIyeQ==
+        "
+            target="_blank"
+            ><section class="item-contatos">
+              <div class="item-contatos-image" id="insta-image"></div>
+              <p class="item-contatos-texto">Instagram</p>
+            </section>
+          </a>
+        </div>
+        <h2>Ou envie uma mensagem</h2>
+        <!-- Formulário de envio de mensagem -->
+        <form action="" method="post" class="formulario">
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" /><br />
+          <label for="email">Seu Email:</label>
+          <input type="email" id="email" /><br />
+          <label for="mensagem">Sua Mensagem:</label>
+          <textarea id="mensagem"></textarea><br />
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+      <div class="image-container" id="contatos-image-container">
+        <img src="social-media.jpg" alt="Acessando redes sociais" />
+      </div>
+    </section>
+  </body>
+</html>
