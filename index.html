@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Declaração do tipo de documento HTML5 -->
     <meta charset="UTF-8" />
-    <!-- Título da página exibido na aba do navegador -->
-    <title>Augusto Programador</title>
-    <!-- Link para o arquivo de estilos CSS externo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <title>Augusto Programador</title>
   </head>
   <body>
     <!-- Barra de navegação do site -->
-    <header class="header-container">
+    <header class="header-container" id="navbar">
       <!-- Espaço do logotipo -->
       <div class="logo-container">
-        <a href="#inicio"><img src="logo.png" alt="Logo" /></a>
+        <a href="#inicio"
+          ><img
+            src="https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/logo.png"
+            alt="Logo"
+        /></a>
       </div>
       <!-- Container cos links de navegação -->
       <div class="navlinks-container">
@@ -27,18 +29,21 @@
       </div>
     </header>
     <!-- Seção inicial -->
-    <section id="inicio" class="main-section">
+    <section class="main-section" id="main-section">
       <!-- Container com a imagem ilustrativa -->
-      <div class="image-container">
-        <img src="home-img.jpg" alt="programando" />
+      <div class="image-container" id="main-image-container">
+        <img
+          src="https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/home-img.jpg"
+          alt="programando"
+        />
       </div>
       <!-- Seção com texto de apresentação -->
-      <section class="text-container">
+      <section id="welcome-section" class="text-container">
         <h1>Augusto Programador</h1>
         <p>Pensando fora da caixa, programando dentro dela</p>
       </section>
-      <!-- Seção "Quem Eu Sou" -->
     </section>
+    <!-- Seção "Quem Eu Sou" -->
     <section class="main-section quem-eu-sou" id="quem-sou">
       <!-- Seção com texto de quem sou eu -->
       <section class="text-container text-quem-sou">
@@ -57,7 +62,10 @@
         </p>
       </section>
       <!-- Seção com minha foto-->
-      <div class="image-container image-quem-sou-container">
+      <div
+        class="image-container image-quem-sou-container"
+        id="img-quem-sou-container"
+      >
         <div id="img-quem-sou"></div>
       </div>
     </section>
@@ -68,7 +76,7 @@
         <h1>Minha educação</h1>
       </section>
       <!-- Seção com as educações formais e cursos livres -->
-      <section class="content-container">
+      <section class="content-container" id="minha-edu-container">
         <section class="text-container" id="educacao-formal">
           <h2>Educação Formal</h2>
           <ul>
@@ -128,15 +136,15 @@
         <h1>Meu Portfólio</h1>
       </section>
       <!-- Seção com os items do potfólio -->
-      <section class="content-container">
+      <section class="content-container" id="projects">
         <!-- Primeiro item do portfólio-->
         <a href="https://augustohide.github.io/fdsUninter/" target="_blank"
-          ><article class="portfolio-item">
+          ><article class="portfolio-item project-tile">
             <div
               class="image-container portfolio-image-item"
               id="portfolio-image-item-1"
             ></div>
-            <section>
+            <section class="project-text-area">
               <h3>Site exemplo</h3>
               <p class="descricao">
                 Site feito a partir da disciplina de Fundamentos de
@@ -149,12 +157,12 @@
         <a
           href="https://github.com/AugustoHide/MyCodeRectTheCompleteGuide2024Course"
           target="_blank"
-          ><article class="portfolio-item">
+          ><article class="portfolio-item project-tile">
             <div
               class="image-container portfolio-image-item"
               id="portfolio-image-item-2"
             ></div>
-            <section>
+            <section class="project-text-area">
               <h3>Exercícios do curso ReactJS</h3>
               <p class="descricao">
                 Repositório contendo todos os código de todos os exercício
@@ -167,16 +175,35 @@
         <a
           href="https://github.com/AugustoHide/MyCodeTheCompleteJavascriptCourse"
           target="_blank"
-          ><article class="portfolio-item">
+          ><article class="portfolio-item project-tile">
             <div
               class="image-container portfolio-image-item"
               id="portfolio-image-item-3"
             ></div>
-            <section>
+            <section class="project-text-area">
               <h3>Exercícios do curso de JavaScript</h3>
               <p class="descricao">
                 Repositório cotendo todos os códigos de todos os exercícios
                 feitos no decorrer de todo o curso.
+              </p>
+            </section>
+          </article></a
+        >
+        <!-- Quarto item do portfólio-->
+        <a
+          href="https://www.freecodecamp.org/AugustoHide"
+          target="_blank"
+          id="profile-link"
+          ><article class="portfolio-item project-tile">
+            <div
+              class="image-container portfolio-image-item"
+              id="portfolio-image-item-4"
+            ></div>
+            <section class="project-text-area">
+              <h3>FreeCodeCamp Profile</h3>
+              <p class="descricao">
+                Minha pagina no freecodecamp, onde mestro meus projetos e
+                evolução.
               </p>
             </section>
           </article></a
@@ -209,7 +236,7 @@
           </a>
           <a
             href="https://www.instagram.com/augustoh.sakihama/profilecard/?igsh=MTZ4Z2x3eTRicWIyeQ==
-        "
+          "
             target="_blank"
             ><section class="item-contatos">
               <div class="item-contatos-image" id="insta-image"></div>
@@ -230,7 +257,10 @@
         </form>
       </section>
       <div class="image-container" id="contatos-image-container">
-        <img src="social-media.jpg" alt="Acessando redes sociais" />
+        <img
+          src="https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/social-media.jpg"
+          alt="Acessando redes sociais"
+        />
       </div>
     </section>
   </body>
