@@ -42,6 +42,28 @@ body {
   text-decoration: none;
   color: rgb(245, 244, 244);
 }
+@media (max-width: 575.98px) {
+  /*#navbar {
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: fit-content;
+  }
+  .navlinks-container {
+    display: sticky;
+    top: 0;
+    height: fit-content;
+    z-index: 100;
+    border: 1px solid rebeccapurple;
+  }
+  .navlinks-container ul {
+    display: flex;
+    flex-direction: column;
+  }*/
+  .navlinks-container ul {
+    display: none;
+  }
+}
 /* Estilo para todas as Seções principais´ */
 .main-section {
   height: 100vh;
@@ -80,6 +102,59 @@ body {
 .text-container p {
   font-family: "Courier New", Courier, monospace;
 }
+@media (max-width: 575.98px) {
+  #main-section {
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 247, 247, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/home-img.jpg");
+    background-size: cover;
+    background-position-x: 30%;
+  }
+  #main-image-container {
+    display: none;
+  }
+  #main-image-container img {
+    display: none;
+  }
+  .text-container {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .text-container h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  #main-section {
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 247, 247, 0.2),
+        rgba(255, 255, 255, 0.2)
+      ),
+      url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/home-img.jpg");
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 70%;
+    overflow-x: hidden;
+  }
+  #main-image-container {
+    display: none;
+  }
+  #main-image-container img {
+    display: none;
+  }
+  .text-container {
+    width: 80%;
+  }
+  .text-container h1 {
+    font-size: 4rem;
+  }
+}
 /* -- Definições para seção que sou -- */
 /* Definição para nova cor de fundo */
 .quem-eu-sou {
@@ -95,12 +170,77 @@ body {
   height: 80%;
 }
 #img-quem-sou {
-  background-image: url("quemsou.jpg");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/quemsou.jpg");
   background-size: cover;
   background-position: center center;
   height: 100%;
   width: 70%;
   border-radius: 1000px;
+}
+@media (max-width: 575.98px) {
+  #quem-sou {
+    flex-direction: column-reverse;
+  }
+  #img-quem-sou-container {
+    width: 80%;
+    height: 40%;
+  }
+  #img-quem-sou {
+    width: 100%;
+  }
+  .text-quem-sou {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  #quem-sou {
+    flex-direction: column-reverse;
+  }
+  #img-quem-sou-container {
+    width: 60%;
+    height: 40%;
+    margin-bottom: 4rem;
+  }
+  #img-quem-sou {
+    width: 100%;
+  }
+  .text-quem-sou {
+    margin: auto;
+    text-align: center;
+  }
+  .text-quem-sou p {
+    font-size: x-large;
+  }
+}
+/* Definições para a seção Minha educação */
+@media (max-width: 575.98px) {
+  #minha-edu-container {
+    flex-direction: column;
+    font-size: x-large;
+    min-height: max-content;
+  }
+  #minha-edu-container h2 {
+    text-align: center;
+  }
+  #minha-edu-container .text-container {
+    width: 90%;
+    margin: auto;
+  }
+  #minha-edu-container .text-container li {
+    font-size: x-large;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  #educacao-section {
+    min-height: fit-content;
+  }
+  #minha-edu-container {
+    align-items: baseline;
+  }
+  #minha-edu-container .text-container li {
+    font-size: x-large;
+  }
 }
 /* Definições para o título da seção Portfólio */
 #text-title-portfolio {
@@ -144,6 +284,13 @@ body {
   background-color: rgb(1, 22, 56);
   color: rgb(245, 244, 244);
   flex-direction: column;
+  height: max-content;
+}
+#portfolio-section .content-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+  padding-bottom: 4rem;
 }
 #text-title-portfolio {
   margin: 1rem auto;
@@ -151,11 +298,12 @@ body {
 }
 /* Definições de estilo para item do portfólio, como sua largura tamanho da imagem do item do portfólio, etc  */
 .portfolio-item {
-  height: 100%;
+  height: 500px;
   width: 30vw;
   background-color: aliceblue;
   border-radius: 10px;
   box-shadow: 1px 1px 20px 10px rgba(187, 187, 255, 0.2);
+  margin: 1rem;
 }
 .portfolio-image-item {
   background-size: cover;
@@ -164,13 +312,36 @@ body {
   border-radius: 10px 10px 0 0;
 }
 #portfolio-image-item-1 {
-  background-image: url("print-portfolio1.png");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/print-portfolio1.png");
 }
 #portfolio-image-item-2 {
-  background-image: url("print-protfolio2.png");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/print-protfolio2.png");
 }
 #portfolio-image-item-3 {
-  background-image: url("print-portfolio3.png");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/print-portfolio3.png");
+}
+#portfolio-image-item-4 {
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/print-portfolio4.png");
+}
+@media (max-width: 575.98px) {
+  #portfolio-section {
+    font-size: x-large;
+  }
+  .portfolio-item {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .project-text-area {
+    padding: 0.3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  #portfolio-section {
+    font-size: x-large;
+  }
+  .portfolio-item {
+    width: 40vw;
+  }
 }
 /* -- Definições da Seção Contatos --*/
 #contatos-section {
@@ -196,13 +367,13 @@ body {
 }
 /* Definições das imagens dos logos das redes sociais*/
 #linkedin-image {
-  background-image: url("liked-in.png");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/liked-in.png");
 }
 #facebook-image {
-  background-image: url("facebook-image.png");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/facebook-image.png");
 }
 #insta-image {
-  background-image: url("insta-logo.png");
+  background-image: url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/insta-logo.png");
 }
 /* Definições da cor dos links*/
 #contatos-section a {
@@ -215,6 +386,37 @@ body {
 }
 #cursos-livres a {
   color: blue;
+}
+@media (max-width: 575.98px) {
+  #contatos-section {
+    background: linear-gradient(
+        rgba(255, 247, 247, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/social-media.jpg");
+    background-size: cover;
+    font-size: larger;
+  }
+  .list-redes-sociais {
+    flex-direction: column;
+  }
+  #contatos-image-container {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  #contatos-section {
+    background: linear-gradient(
+        rgba(255, 247, 247, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      url("https://raw.githubusercontent.com/AugustoHide/AugustoProgramador/refs/heads/main/social-media.jpg");
+    background-size: cover;
+    font-size: larger;
+  }
+  #contatos-image-container {
+    display: none;
+  }
 }
 /* -- Definições de estlo do formulário -- */
 .formulario {
